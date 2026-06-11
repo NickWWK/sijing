@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Which city pairs with Beijing?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 0,
+    "explanation": "Beijing × Paris: Ancient majesty meets timeless romance."
+  },
+  {
+    "question": "Which landmark pairs with the Forbidden City?",
+    "options": ["Louvre Museum", "Eiffel Tower", "Notre-Dame Cathedral", "All of the above"],
+    "correct": 3,
+    "explanation": "All three are classic comparisons: imperial palace, modern icon, and Gothic cathedral."
+  },
+  {
+    "question": "Which city pairs with Nanjing?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 1,
+    "explanation": "Nanjing × London: A dialogue between history and modern power."
+  },
+  {
+    "question": "Which landmark pairs with the Ming Xiaoling Mausoleum?",
+    "options": ["Westminster Abbey", "Tower of London", "Big Ben", "Buckingham Palace"],
+    "correct": 0,
+    "explanation": "Ming Xiaoling (Nanjing) vs Westminster Abbey (London): both are symbols of royal legacy."
+  },
+  {
+    "question": "Which city pairs with Xi'an?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 2,
+    "explanation": "Xi'an × Rome: Two ancient civilizations in conversation."
+  },
+  {
+    "question": "Which landmark pairs with the Terracotta Army?",
+    "options": ["Colosseum", "Pantheon", "Roman Forum", "Vatican"],
+    "correct": 0,
+    "explanation": "Terracotta Army (Xi'an) vs Colosseum (Rome): both represent ancient military and entertainment engineering."
+  },
+  {
+    "question": "Which city pairs with Luoyang?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 3,
+    "explanation": "Luoyang × Kyoto: Exploring cultural exchange across East Asia."
+  },
+  {
+    "question": "Which landmark pairs with the Longmen Grottoes?",
+    "options": ["Kinkaku-ji", "Kiyomizu-dera", "Fushimi Inari Taisha", "None of the above"],
+    "correct": 0,
+    "explanation": "Longmen Grottoes (Luoyang) vs Kinkaku-ji (Kyoto): both are masterpieces of Buddhist art."
+  },
+  {
+    "question": "Which city was the earliest center for the introduction of Buddhism to China?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 3,
+    "explanation": "Luoyang (White Horse Temple) is the site of China's first Buddhist temple."
+  },
+  {
+    "question": "Which city has one of the world's best-preserved ancient city walls?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 2,
+    "explanation": "Xi'an's ancient city wall is the most intact Ming-era wall in the world."
+  },
+  {
+    "question": "Which city is known as the 'Eternal Imperial Capital'?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 0,
+    "explanation": "Beijing was the capital of the last feudal dynasties and is called the eternal imperial capital."
+  },
+  {
+    "question": "Which city is called the 'Six Dynasties Ancient Capital'?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 1,
+    "explanation": "Nanjing was the capital during the Six Dynasties (Wu, Eastern Jin, Song, Qi, Liang, Chen)."
+  },
+  {
+    "question": "Which city is known as the 'Capital of Thirteen Dynasties'?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 3,
+    "explanation": "Luoyang had the most dynasties established there in Chinese history (thirteen dynasties)."
+  },
+  {
+    "question": "Which city is home to the UNESCO-listed Terracotta Army?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 2,
+    "explanation": "The Terracotta Army is part of the Mausoleum of the First Qin Emperor in Xi'an."
+  },
+  {
+    "question": "Which city has the Golden Pavilion (Kinkaku-ji)?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Kyoto"],
+    "correct": 3,
+    "explanation": "Kinkaku-ji is a famous Zen temple covered in gold leaf in Kyoto."
+  },
+  {
+    "question": "Which city has the 'Thousand Torii Gates'?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Kyoto"],
+    "correct": 3,
+    "explanation": "Fushimi Inari Taisha in Kyoto is famous for its thousands of vermilion torii gates."
+  },
+  {
+    "question": "Which city is home to the Louvre Museum?",
+    "options": ["Beijing", "Paris", "London", "Rome"],
+    "correct": 1,
+    "explanation": "The Louvre in Paris houses the Mona Lisa and countless masterpieces."
+  },
+  {
+    "question": "Which city has Big Ben?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 1,
+    "explanation": "Big Ben (Elizabeth Tower) is part of the Houses of Parliament in London."
+  },
+  {
+    "question": "Which city has the Colosseum?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 2,
+    "explanation": "The Colosseum in Rome is the iconic ancient amphitheater."
+  },
+  {
+    "question": "Which city has Kiyomizu-dera?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Kyoto"],
+    "correct": 3,
+    "explanation": "Kiyomizu-dera in Kyoto is famous for its wooden stage overlooking the city."
+  },
+  {
+    "question": "Which city has the Temple of Heaven?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 0,
+    "explanation": "The Temple of Heaven in Beijing was where emperors prayed for good harvests."
+  },
+  {
+    "question": "Which city has Westminster Abbey?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 1,
+    "explanation": "Westminster Abbey in London is the site of royal coronations and burials."
+  },
+  {
+    "question": "Which city has the Pantheon?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 2,
+    "explanation": "The Pantheon in Rome is famous for its massive unreinforced concrete dome."
+  },
+  {
+    "question": "Which city has the White Horse Temple?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 3,
+    "explanation": "The White Horse Temple in Luoyang is China's first Buddhist temple."
+  },
+  {
+    "question": "Which city has the Eiffel Tower?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 0,
+    "explanation": "The Eiffel Tower is the sparkling symbol of Paris."
+  },
+  {
+    "question": "Which city has the Tower of London?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 1,
+    "explanation": "The Tower of London houses the Crown Jewels and has a rich history."
+  },
+  {
+    "question": "Which city has the Roman Forum?",
+    "options": ["Paris", "London", "Rome", "Kyoto"],
+    "correct": 2,
+    "explanation": "The Roman Forum was the political and commercial heart of ancient Rome."
+  },
+  {
+    "question": "Which city has Fushimi Inari Taisha?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Kyoto"],
+    "correct": 3,
+    "explanation": "Fushimi Inari Taisha in Kyoto is famous for its thousands of red torii gates."
+  },
+  {
+    "question": "Which city has the Forbidden City?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Luoyang"],
+    "correct": 0,
+    "explanation": "The Forbidden City in Beijing was the imperial palace of the Ming and Qing dynasties."
+  },
+  {
+    "question": "Which city has Kinkaku-ji (Golden Pavilion)?",
+    "options": ["Beijing", "Nanjing", "Xi'an", "Kyoto"],
+    "correct": 3,
+    "explanation": "Kinkaku-ji is the iconic gold-leaf Zen temple in Kyoto."
+  }
+]

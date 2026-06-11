@@ -1,0 +1,943 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 220, 0.4);
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 2rem;
+  
+}
+
+/* Nav bar */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  /*margin-left: 25px;*/
+  margin: 0;
+}
+
+.nav-link {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FFD700;
+}
+
+.nav-link.active {
+  color: #333;
+}
+
+.nav-link.active:hover {
+  color: #FFD700;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #8B0000;
+  color: #FFD700;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 10px;
+  color: #f4f4f4;
+  background: linear-gradient(135deg, lightblue, rgb(212, 190, 21));
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.our-story {
+  background: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Main */
+.main-container {
+  padding: 2rem;
+}
+
+.card-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem; 
+  margin: 3rem 0;
+  grid-auto-rows: 1fr;
+}
+
+.card-item {
+  /*flex: 0 0 22%; max-width: 22%;  /* Four cards in a row */
+  width: 100%;
+  
+}
+
+.square-card {
+ 
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 保持一致高度 */
+}
+
+.square-card:hover { 
+  transform: translateY(-5px); 
+} 
+
+.card-image { 
+  width: 100%; 
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+} 
+
+.card-content { 
+  
+  flex: 1;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+.card-title { 
+  font-size: 18px; 
+  font-weight: bold; 
+  margin-bottom: 0.5rem; 
+  color: #0d6efd; 
+} 
+
+.card-text { 
+  font-size: 14px; 
+  margin-bottom: 1rem; 
+  color: #333; 
+} 
+
+.card-button { 
+  display: inline-block; 
+  background-color: #001f3f; 
+  color: #fff; 
+  padding: 0.5rem 1rem; 
+  text-decoration: none; 
+  border-radius: 0.375rem; 
+  transition: background-color 0.3s ease;
+  margin-top: auto; 
+}
+
+.card-button:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.column {
+  text-align: center;
+}
+
+.gallery { 
+  display: grid; 
+  grid-template-columns: 1fr;
+  justify-items: center;   
+  margin: 20px 0; 
+}
+
+.art-card { 
+  border: 1px solid #ddd; 
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;  
+}
+    
+.timeline { 
+ margin: 30px 0; 
+ border-left: 2px solid #2c3e50; 
+ padding-left: 20px;
+ text-align: center; 
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 響應式自動排版 */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-grid a img {
+  width: 100%;
+  aspect-ratio: 2/3; /* 秀場長條比例，更有專業感 */
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid a img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.content-section {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: white;
+  color: #333;
+  padding: 0.5rem;
+  bottom: 0;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 0.25rem;
+  text-align: left; 
+}
+
+.copyright,
+.copyright p,
+.copyright small,
+.text-nowrap {
+  white-space: nowrap;
+  font-size: 18px;
+  text-align: left;
+  margin: 0.3rem 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FFD700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  margin-right: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: #FFD700;
+}
+
+.footer-col h6 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.contact-list, .quick-links {
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.contact-list li, .quick-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col small {
+  display: block;
+  text-align: left;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+}
+
+.comparison-section {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.comparison-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.comparison-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.comparison-city {
+    flex: 1 1 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.comparison-city h3 {
+    padding: 1rem;
+    margin: 0;
+    background: #8B0000;
+    color: white;
+    text-align: center;
+}
+
+p {
+    padding: 1rem;
+    color: #444;
+}
+
+.vs {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px; 
+    height: 80px; 
+    background: #FFD700; 
+    color: #001f3f; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 2.2rem; 
+    font-weight: bold; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+    z-index: 10;
+}
+
+.exchange-section {
+    padding: 4rem 2rem; 
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+}
+
+.exchange-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.exchange-card {
+    background: white; 
+    border-radius: 12px; 
+    padding: 2.5rem 1.5rem; 
+    text-align: center; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: all 0.3s ease;
+}
+   
+.exchange-card:hover {
+    transform: translateY(-8px);
+    background: #ffd700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.exchange-card i {
+  font-size: 3.5rem;
+  color: #001f3f;
+  margin-bottom: 1.2rem;
+}
+
+.exchange-card h3 {
+  color: #8B0000;        
+  margin: 0.8rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;       
+}
+
+.exchange-card p {
+  color: #000 !important;         
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* FAQ style */
+.faq-section {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #8B0000;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.faq-item summary:hover {
+  background: #f0f0f0;
+}
+
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #001f3f;
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.faq-answer p {
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.game-intro {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+}
+
+.game-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  flex: 1 1 300px;
+  max-width: 360px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  height: 150px;
+  background: linear-gradient(to right , lightgreen , orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.feature-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h4 {
+  color: #8B0000;
+  margin-bottom: 0.8rem;
+  font-size: 18px;
+}
+
+.btn-start-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-start {
+  display: inline-block;
+  background:linear-gradient(to right,lightgreen,orange);
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.btn-start:hover {
+  background:linear-gradient(to right , lightblue , salmon);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.quiz-section {
+  padding: 4rem 2rem; 
+  background: #f9f9f9;
+}
+
+.question {
+  font-size: 18px;
+  margin: 2rem 0;
+  min-height: 80px;
+}
+
+.question-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#question {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #001f3f;
+  line-height: 1.5;
+  min-height: 100px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+
+
+.options {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 1.5rem; 
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.feedback-box {
+  margin: 2rem auto;
+  max-width: 900px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  min-height: 120px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.btn-play-again {
+  display: none; 
+  margin-top: 2rem; 
+  padding: 1rem 2rem; 
+  background: linear-gradient(to right,lightgreen,orange); ; 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-play-again:hover {
+  background:linear-gradient(to right , lightblue , salmon);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.timer-box {
+  position: absolute;
+  top: 8rem;
+  right: 5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8B0000;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  z-index: 10;
+  min-width: 140px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .comparison-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .comparison-city {
+    width: 100%;
+  }
+  .vs {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin: 1rem 0;
+        align-items: center;
+        display: flex;
+    }
+  body , p , a , li , button {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 , h4 {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  /* hamburger menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .navbar-nav.active {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #f8f8f8;
+    padding: 0.5rem 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Container */
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .question-box {
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  #question {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .options-grid button {
+    font-size: 1.1rem;
+    padding: 1.2rem 1rem;
+  }
+
+  .feedback-box {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  /* Timer: 只喺遊戲頁面顯示，固定右上角，預設隱藏 */
+  .quiz-section .timer-box {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8B0000;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    z-index: 9999;
+    min-width: 140px;
+    text-align: center;
+  }
+
+  .quiz-section .timer-box.active {
+    display: block;
+  }
+
+  .quiz-buttons {
+    text-align: center;
+  }
+
+  .btn-play-again,
+  .btn-next {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  /* Footer */
+  .footer-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  /* Cards: 每行兩個 */
+  .card-item {
+    max-width: 100%;
+  }
+
+  .card-section {
+    
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .square-card {
+    height: 100%; /* fill up grid cell */
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    body, p {
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .options-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .quiz-section .timer-box {
+      top: 1.2rem;
+      right: 1.5rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+  .card-section {
+    grid-template-columns: 1fr; /* 手機：一列 */
+  }
+}
+}
+
+
+
+
+
+
