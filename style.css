@@ -161,6 +161,15 @@ p {
   grid-auto-rows: 1fr;
 }
 
+
+.sub-card-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem; 
+  margin: 3rem 0;
+  grid-auto-rows: 1fr;
+}
+
 .card-item {
   /*flex: 0 0 22%; max-width: 22%;  /* Four cards in a row */
   width: 100%;
@@ -901,6 +910,11 @@ h4 {
     
     grid-template-columns: repeat(2,1fr);
   }
+  
+  .sub-card-section {
+    
+    grid-template-columns: repeat(2,1fr);
+  }
 
   .square-card {
     height: 100%; /* fill up grid cell */
@@ -931,6 +945,9 @@ h4 {
 
   @media (max-width: 480px) {
   .card-section {
+    grid-template-columns: 1fr; /* 手機：一列 */
+  }
+  .sub-card-section {
     grid-template-columns: 1fr; /* 手機：一列 */
   }
 }
