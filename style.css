@@ -51,7 +51,7 @@ body::before {
 }
 
 .logo {
-  height: 50px;
+  height: 20px;
   width: auto;
   margin-right: 2rem;
   
@@ -753,7 +753,7 @@ h4 {
   }
 
   .logo {
-    height: 45px;
+    height: 20px;
   }
 
   /* hamburger menu */
