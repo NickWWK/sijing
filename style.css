@@ -710,6 +710,18 @@ h4 {
   text-align: center;
 }
 
+  @media (max-width: 1150px) {
+
+.card-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.5rem; 
+  margin: 3rem 0;
+  grid-auto-rows: 1fr;
+}
+
+    
+}
 
   @media (max-width: 912px) {
   .logo {
