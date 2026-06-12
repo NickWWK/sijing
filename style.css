@@ -974,6 +974,15 @@ h4 {
     display: flex;
     flex-direction: column;
   }
+
+  
+.exchange-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem;
+    margin-top: 2rem;
+}
+    
 }
   
 
