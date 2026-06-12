@@ -731,6 +731,18 @@ h4 {
     
 }
 
+
+  @media (max-width: 1037px) {
+
+.exchange-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); 
+    gap: 2rem;
+    margin-top: 2rem;
+}
+    
+}
+
   @media (max-width: 912px) {
   .logo {
     height: 30px;
