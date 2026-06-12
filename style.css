@@ -737,6 +737,20 @@ h4 {
   }
 }
 
+
+  @media (max-width: 840px) {
+
+.sub-card-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem; 
+  margin: 3rem 0;
+  grid-auto-rows: 1fr;
+}
+    
+}
+
+
 @media (max-width: 768px) {
   .comparison-item {
     flex-direction: column;
