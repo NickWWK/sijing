@@ -494,9 +494,6 @@ p {
   margin: 0 auto;
 }
 
-.faq-item summary:open{
-  transition: ease 10s
-}
 
 .faq-item {
   margin-bottom: 1rem;
