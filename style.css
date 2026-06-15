@@ -566,6 +566,8 @@ p {
 
 .feature-card:hover {
   transform: translateY(-8px);
+  background: #ffd700;
+  transition: all ease 0.7s;
 }
 
 .feature-icon {
@@ -581,12 +583,6 @@ p {
 .feature-content {
   padding: 1.5rem;
   text-align: center;
-}
-
-
-.feature-content:hover {
-    background: #ffd700;
-    transition: all ease 0.7s;
 }
 
 h4 {
