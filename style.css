@@ -586,6 +586,7 @@ p {
 
 .feature-content:hover {
     background: #ffd700;
+    transition: all ease 0.7s;
 }
 
 h4 {
